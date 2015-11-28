@@ -11,3 +11,5 @@ libraryDependencies ++= Seq( jdbc , cache , ws   , specs2 % Test )
 unmanagedResourceDirectories in Test <+=  baseDirectory ( _ /"target/web/public/test" )  
 
 fork in run := true
+
+libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.37"
